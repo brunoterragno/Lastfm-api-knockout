@@ -1,0 +1,27 @@
+{
+  "name": "lastfm-api+knockout",
+  "main": "index.html",
+  "version": "0.0.1",
+  "authors": [
+    "Bruno Terragno \"bruno.terragno@gmail.com\""
+  ],
+  "description": "A simple way to get scrobbled musics from last.fm",
+  "keywords": [
+    "lastfm",
+    "knockout"
+  ],
+  "license": "MIT",
+  "homepage": "\"\"",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockoutjs": "latest",
+    "jquery": "latest"
+  }
+}

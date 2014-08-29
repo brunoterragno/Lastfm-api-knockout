@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>My Last.fm</title>
+
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="bower_components/knockoutjs/dist/knockout.js"></script>
+	
+</head>
+<body>
+<div class="last-fm">
+<h4>Last Tracks</h4>
+<div class="tracks-container">    
+    <div data-bind="foreach: tracks">
+        <div class="track">       
+            <p><img width="34px" height="34px" data-bind="attr:{src: image[0]['#text']}" />
+            <span data-bind="text: artist['#text'] + ' - ' + name"/>
+            </p>
+        </div>
+    </div>    
+    Total tracks: <small data-bind="text: totalTracks()"></small>
+</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="index.js"></script>
